@@ -1,8 +1,8 @@
-package controllers.enterprise;
+package controllersProxy.mobile;
 
 import controllers.ControllerLogin;
 
-public class ControllerEnterpriseLogin implements ControllerLogin{
+public class ControllersProxyMobileLogin implements ControllerLogin {
 
     @Override
     public void login() {
