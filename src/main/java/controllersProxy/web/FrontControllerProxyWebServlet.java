@@ -1,6 +1,7 @@
 package controllersProxy.web;
 
 import models.Administrator;
+import models.Player;
 
 public  class FrontControllerProxyWebServlet  {
 	//Servlet implementado como clase normal 
@@ -12,5 +13,7 @@ public  class FrontControllerProxyWebServlet  {
 	   new ControllerProxyWebLogin().process();//hace el servlet de dispatcher
 	   new ControllerProxyWebLogout().process();
 	   new ControllerProxyWebGetStatistics(new Administrator()).process();
+	   new ControllerProxyWebCreateRound(new Player()).process();
+	   new ControllerProxyWebDeleteRound(new Player()).process();
 	}
 }
