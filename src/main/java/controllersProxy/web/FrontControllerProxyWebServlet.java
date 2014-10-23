@@ -9,6 +9,6 @@ public  class FrontControllerProxyWebServlet  {
    }
 	public void doPost(){
 	   new ControllerProxyWebLogin().process();//hace el servlet de dispatcher
-	   
+	   new ControllerProxyWebLogout().process();
 	}
 }
