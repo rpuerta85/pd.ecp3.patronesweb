@@ -15,5 +15,6 @@ public  class FrontControllerProxyWebServlet  {
 	   new ControllerProxyWebGetStatistics(new Administrator()).process();
 	   new ControllerProxyWebCreateRound(new Player()).process();
 	   new ControllerProxyWebDeleteRound(new Player()).process();
+	   new ControllerProxyWebMoveCard(new Player()).process();
 	}
 }
