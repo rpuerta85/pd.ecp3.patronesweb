@@ -2,7 +2,7 @@ package models.DAO;
 
 import java.util.List;
 
-public abstract class GenericDAO<T,ID> {
+public interface GenericDAO<T,ID> {
     public abstract void create(T entity);
     public abstract T read(ID id);
     public abstract void update(T entity);
