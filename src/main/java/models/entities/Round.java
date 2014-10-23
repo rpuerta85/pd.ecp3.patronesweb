@@ -1,24 +1,25 @@
 package models.entities;
 
+import java.util.Set;
+
 public class Round {
-    private User playerWithTurn; 
-    public static final int PLAYERS=2;
-    private User[] players=new User[PLAYERS];
-    
-    public Round() {
+    private int id;
+    private Set<User> players;
+    public Round(int id, Set<User> players) {
         super();
-        // TODO Auto-generated constructor stub
+        this.id = id;
+        this.players = players;
     }
-    public User getPlayerWithTurn() {
-        return playerWithTurn;
+    public int getId() {
+        return id;
     }
-    public void setPlayerWithTurn(User playerWithTurn) {
-        this.playerWithTurn = playerWithTurn;
+    public void setId(int id) {
+        this.id = id;
     }
-    public User[] getPlayers() {
+    public Set<User> getPlayers() {
         return players;
     }
-    public void setPlayers(User[] players) {
+    public void setPlayers(Set<User> players) {
         this.players = players;
     }
     
